@@ -6,7 +6,9 @@
 
 ### Basic Principles
 
-CUDA organizes threads in a hierarchical structure on the GPU:
+CUDA organizes threads in a hierarchical structure on the GPU as shown in the figure:
+
+![Figure 1](CUDA-memory-model.gif "Memory architecture")
 
 * **Thread**: The smallest execution unit, executes a single instruction stream.
 * **Warp**: A group of 32 threads; the basic scheduling unit, executing synchronously in SIMT mode.
